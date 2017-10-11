@@ -1,0 +1,6 @@
+CREATE DATABASE pyflask;
+
+CREATE TABLE Persons (
+    FirstName varchar(255),
+    Lastname varchar(255)
+);
