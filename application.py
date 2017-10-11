@@ -25,7 +25,7 @@ def add_person():
     name = request.args.get('name', None)
     lastname = request.args.get('lastname', None)
 
-    cursor.execute("INSERT INTO Persons (FirstName, Lastname) VALUES (%s, %s)", (name, lastname))
+    cursor.execute("INSERT INTO Persons (Firstname, Lastname) VALUES (%s, %s)", (name, lastname))
     
     return jsonify("added %s $s", (name, lastname))
 
