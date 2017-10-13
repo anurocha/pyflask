@@ -30,4 +30,4 @@ def add_person():
     return jsonify("added %s $s", (name, lastname))
 
 if __name__ == "__main__":
-    app.run()
+    app.run(host='0.0.0.0')
